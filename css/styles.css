@@ -109,6 +109,7 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -150,6 +151,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mail-icon {
@@ -211,6 +214,7 @@ img {
     padding-right: 32px;
     border-radius: 4px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -402,6 +406,8 @@ img {
     justify-content: center;
     border-radius: 50%;
     color: rgba(175, 177, 184, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons:hover,
@@ -446,6 +452,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 
@@ -456,6 +465,7 @@ img {
 
 .loyal-link .loyal-icon {
     fill: currentColor;
+    
 }
 
 .loyal-link {
@@ -478,6 +488,7 @@ img {
 
 .footer-social-icon {
     fill: currentColor;
+   
 
 }
 
@@ -493,7 +504,8 @@ img {
 
 .footer-social-list .footer-social-link {
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
 
     width: 44px;
     height: 44px;
@@ -554,6 +566,7 @@ img {
     list-style: none;
     line-height: 1.71;
     margin-top: 20px;
+    
 
 }
 
@@ -567,6 +580,7 @@ img {
     line-height: 2;
     text-decoration: none;
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footeradress:hover,
@@ -579,6 +593,7 @@ img {
     text-decoration: none;
     color: var(--footer-contact);
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footermail:hover,
@@ -591,6 +606,7 @@ img {
     line-height: 2;
     text-decoration: none;
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footerphone:hover,
@@ -626,6 +642,8 @@ img {
     padding-right: 22px;
     letter-spacing: 0.03em;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
@@ -667,6 +685,7 @@ img {
 
 .card-link {
     text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list {
@@ -681,6 +700,7 @@ img {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
+    
 
 }
 
@@ -698,7 +718,30 @@ img {
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.card-thumb{
+    position: relative;
+    overflow: hidden;
+}
+.card-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--white-color);
+    
 
+}
+.card-box:hover .card-overlay{
+    transform: translatey(0);
+
+}
 
 /* MODAL WINDOW */
 
@@ -709,6 +752,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: var(--backdrop-color);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -718,11 +762,11 @@ img {
 
 .modal {
     position: absolute;
-
+    background-color: var(--white-color);
     width: 528px;
     height: 581px;
+    
 
-    background-image: url("./images/pg.png");
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
