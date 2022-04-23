@@ -65,7 +65,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="section recital">
@@ -136,46 +138,42 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-examples">
-            <div class="example-thumb">
-              <li>
+            <li>
+              <div class="example-thumb">
                 <img
                   class="example-photo"
                   src="./images/dev1.jpg"
                   width="370"
                   alt="Программист пишет код"
                 />
-                <div class="example-block">
-                  <p class="description">Десктопные приложения</p>
-                </div>
-              </li>
-            </div>
-            <div class="example-thumb">
-              <li>
+                <p class="description">Десктопные приложения</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="example-thumb">
                 <img
                   class="example-photo"
                   src="./images/dev2.jpg"
                   width="370"
                   alt="создание интерфейса"
                 />
-                <div class="example-block">
-                  <p class="description">Мобильные приложения</p>
-                </div>
-              </li>
-            </div>
-            <div class="example-thumb">
-            <li>
-              <img
-                class="example-photo"
-                src="./images/dev3.jpg"
-                width="370"
-                alt="работа с цветом"
-              />
-               <div class="example-block">
-                  <p class="description">Дизайнерские решения</p>
-                </div>
-              </li>
+
+                <p class="description">Мобильные приложения</p>
+              </div>
             </li>
-            </div>
+
+            <li>
+              <div class="example-thumb">
+                <img
+                  class="example-photo"
+                  src="./images/dev3.jpg"
+                  width="370"
+                  alt="работа с цветом"
+                />
+                <p class="description">Дизайнерские решения</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -429,12 +427,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-       <button class="modal-close" type="button" data-modal-close>
+        <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon" width="18" height="18">
-          <use href="./images/symbol-defs.svg#icon-close" ></use>
-        </svg>
-       </button>
-       
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
